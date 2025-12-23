@@ -81,3 +81,35 @@ footer {
   font-size: 0.9rem;
   border-top: 1px solid #1f2933;
 }
+
+/* Article-style notebook wrapper */
+.article-layout {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.article-card {
+  max-width: 1200px;
+  width: 100%;
+  background: var(--card-bg, #0b1220);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+}
+
+/* Navigation above notebook */
+.article-nav {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Keep notebook from shrinking */
+.jp-Notebook {
+  width: 100%;
+}
+
+/* Notebook content container */
+#notebook-container {
+  width: 100%;
+  max-width: 100%;
+}
