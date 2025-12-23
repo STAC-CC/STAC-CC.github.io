@@ -130,49 +130,15 @@ main {
   font-weight: 600;
 }
 
+
 /* ===============================
-   JUPYTER DARK COEXISTENCE
+   JUPYTER — EMBED, DO NOT RESTYLE
    =============================== */
 
-/* Remove forced white backgrounds */
+/* Let the notebook keep its own look */
 .jp-Notebook,
-.jp-NotebookPanel,
-#notebook-container,
-.jp-Cell,
-.jp-OutputArea,
-.jp-RenderedHTMLCommon {
-  background: transparent !important;
-  color: var(--text);
+#notebook-container {
+  background: inherit;
 }
 
-/* Markdown text */
-.jp-RenderedHTMLCommon p,
-.jp-RenderedHTMLCommon h1,
-.jp-RenderedHTMLCommon h2,
-.jp-RenderedHTMLCommon h3,
-.jp-RenderedHTMLCommon h4,
-.jp-RenderedHTMLCommon li {
-  color: var(--text);
-}
-
-/* Tables */
-.jp-RenderedHTMLCommon table {
-  background: transparent;
-  color: var(--text);
-}
-
-.jp-RenderedHTMLCommon th,
-.jp-RenderedHTMLCommon td {
-  border-color: #1f2933;
-}
-
-/* Code cells */
-.jp-CodeCell .jp-InputArea-editor {
-  background: #020617;
-  border-radius: 8px;
-}
-
-/* Ensure notebook spans full article width */
-.jp-Notebook {
-  width: 100%;
-}
+/* Do NOT touch cells, outputs, markdown, code, etc */
